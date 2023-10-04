@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Admission Form</title>
+</head>
+
+<body>
+    <h2>Student Admission Form</h2>
+    <hr>
+    <form>
+        <label>Full Name</label>
+        <input type="text" required minlength="3">
+        <br>
+        <br>
+
+        <label>Email I'd</label>
+        <input type="email" required>
+        <br>
+        <br>
+        <label>Age</label>
+        <input type="number" min="15">
+        <br>
+        <br>
+        <label>Date of fees submission</label>
+        <input type="date" required>
+        <br>
+        <br>
+        <label>Mailing Address</label>
+        <textarea rows="10" cols="20"></textarea>
+        <br>
+        <br>
+        <label>Select cities</label>
+        <select>
+            <option>Lucknow</option>
+            <option>Roorkee</option>
+            <option>Mumbai</option>
+            <option>Delhi</option>
+        </select>
+        <label>Name of Board</label>
+        <input type="text" list="board">
+        <datalist id="board">
+            <option> UP BOARD </option>
+            <option>CBSE Board</option>
+            <option>ICSE Board</option>
+        </datalist>
+        <br>
+        <br>
+        <label>Gender</label>
+        <input type="radio" name="Gender">Male
+        <input type="radio" name="Gender">Female
+        <br><br>
+        <input type="checkbox"><span>Terms and Conditions accepted</span>
+        <details>
+            <summary>View terms and Conditions</summary>
+            <p>Lorem ipsum dolor, <mark>sit amet consectetur adipisicing elit.</mark> Aspernatur inventore fuga voluptatibus nesciunt
+                perspiciatis eveniet at!</p>
+        </details>
+        <br><br>
+
+        <button>Submit</button>
+    </form>
+
+</body>
+
+</html>
